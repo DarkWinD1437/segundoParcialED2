@@ -1,0 +1,51 @@
+Donald Knuth
+Donald Ervin Knuth (Milwaukee, Wisconsin; 10 de enero 1938) es un reconocido experto en ciencias de la computación 
+estadounidense y matemático, famoso por su fructífera investigación dentro del análisis de algoritmos y compiladores.
+Es Profesor Emérito de la Universidad de Stanford.
+Biografía
+Primeros años
+Knuth nació en Milwaukee, Wisconsin, hijo de Ervin Henry Knuth y Louise Marie Bohning. ​
+Describe su herencia como alemana luterana del Medio Oeste.
+Su padre tenía una pequeña imprenta y enseñaba contabilidad.
+Donald, estudiante del Milwaukee Lutheran High School, pensó en formas ingeniosas de resolver problemas. 
+Por ejemplo, en octavo grado, participó en un concurso para encontrar el número de palabras que las letras en Ziegler's 
+Giant Bar (Barra Gigante de Ziegler) podían ser reordenadas; los jueces habían identificado 2.500 palabras de este tipo. 
+Con el tiempo ganado fuera de la escuela debido a un fingido dolor de estómago, y trabajando el problema en sentido 
+contrario, Knuth utilizó un diccionario no abreviado y determinó si cada entrada del diccionario podía formarse utilizando 
+las letras de la frase. Usando este algoritmo, identificó más de 4.500 palabras, ganando el concurso. Como premios, 
+el colegio recibió un nuevo televisor y suficientes chocolatinas para que todos sus compañeros se las comieran.
+Educación
+Knuth recibió una beca en física en la Case Institute of Technology (ahora parte de la Case Western Reserve University) 
+en Cleveland, Ohio, matriculándose en 1956. También se unió al capítulo Beta Nu de la fraternidad Theta Chi. 
+Mientras estudiaba física en Case, Knuth conoció el IBM 650, un primer ordenador comercial. Después de leer el manual del 
+ordenador, Knuth decidió reescribir el código ensamblador y compilador de la máquina utilizada en su escuela, 
+porque creía que podía hacerlo mejor.
+En 1958, Knuth creó un programa para ayudar al equipo de baloncesto de su colegio a ganar sus partidos. 
+Asignó "valores" a los jugadores para calibrar su probabilidad de obtener puntos, un enfoque novedoso del que 
+posteriormente informaron Newsweek y CBS Evening News.
+Knuth fue uno de los editores fundadores de la revista Engineering and Science Review del Instituto Case, 
+que ganó un premio nacional como mejor revista técnica en 1959. Luego cambió la física por las matemáticas, 
+y recibió dos títulos de Case en 1960​ su licenciatura en ciencias, y simultáneamente un máster en ciencias 
+por un premio especial de la facultad, que consideró su trabajo excepcionalmente destacado.
+En 1963, con el matemático Marshall Hall como asesor, se doctoró en matemáticas en el California Institute of Technology.
+Carrera profesional
+Después de recibir su doctorado, Knuth se unió a la facultad de Caltech como profesor asistente. 
+Aceptó el encargo de escribir un libro sobre lenguaje de programación informático compilador. 
+Mientras trabajaba en este proyecto, Knuth decidió que no podía tratar adecuadamente el tema sin desarrollar 
+primero una teoría fundamental de la programación de ordenadores, que se convirtió en El arte de la programación 
+de ordenadores. Originalmente planeó publicarlo como un solo libro. A medida que Knuth desarrollaba su esquema para el libro,
+llegó a la conclusión de que necesitaba seis volúmenes, y luego siete, para cubrir completamente el tema. 
+Publicó el primer volumen en 1968. 
+Justo antes de publicar el primer volumen de The Art of Computer Programming, Knuth dejó Caltech para aceptar un 
+empleo en el División de Investigación de Comunicaciones del Instituto de Análisis de Defensa, situado entonces en el campus  
+de la Princeton University, que realizaba investigaciones matemáticas en criptografía para apoyar a la National Security 
+Agency. 
+En 1967, Knuth asistió a una conferencia de la Sociedad de Matemática Industrial y Aplicada y alguien le preguntó a qué 
+se dedicaba. En aquella época, la informática se dividía en análisis numérico, inteligencia artificial y lenguajes de 
+programación. Basándose en su estudio y en el libro The Art of Computer Programming, Knuth decidió que la próxima vez 
+que alguien le preguntara diría: Análisis de algoritmos.
+Knuth dejó entonces su puesto para unirse a la facultad de la Universidad de Stanford en 1969,​ 
+donde ahora es profesor emérito de Ciencias de la Computación Fletcher Jones.
+Está casado con Jill Carter Knuth. Tienen dos hijos. 
+Ha sido galardonado con el Premio Fundación BBVA Fronteras del Conocimiento 2010 en la categoría de Tecnologías 
+de la información y la comunicación.
