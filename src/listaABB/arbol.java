@@ -12,7 +12,7 @@ public class arbol {
     public Nodo raiz;
 
     public arbol() {
-        this.raiz = raiz;
+        raiz = null;
     }
     //////////////////////////////////////////////////
     public void insertar(String str) {
@@ -44,19 +44,32 @@ public class arbol {
         inOrden(p.der);
     }
     /////////////////////////////////////////////////
-    public void inOrdenDesc() {
-        inOrdenDesc(raiz);
+    
+    public int altura(){
+        return altura(raiz);
     }
-
-    private void inOrdenDesc(Nodo p) {
-        if (p == null) {
-            return;
+    
+    private int altura(Nodo p){
+        if(p == null){
+            return 0;
         }
-        inOrdenDesc(p.der); 
-        System.out.println(p.str);
-        inOrdenDesc(p.izq);  
+        int altIzq = altura(p.izq);
+        int altDer = altura(p.der);
+        return 1 + Math.max(altIzq, altDer);
     }
-    ////////////////////////////////////////////////
     
+    ///////////////////////////////////////////////////
     
+    public int cantidad(){
+        return cantidad(raiz);
+    }
+    
+    public int cantidad(Nodo p){
+        if(p == null){
+            return 0;
+        }
+        return 1 + cantidad(p.izq) + cantidad(p.der);
+    }
+    
+    //////////////////////////////////////////////////////////
 }

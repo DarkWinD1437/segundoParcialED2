@@ -147,5 +147,4 @@ public class arbol {
          }
          return menor(p.izq);
      }
-    
 }
