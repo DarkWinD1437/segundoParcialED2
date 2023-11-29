@@ -31,6 +31,7 @@ public class arbol {
         }
         return p;
     }
+    
     ////////////////////////////////////////////////////
     public void inOrden(){
         inOrden(raiz);
@@ -44,6 +45,7 @@ public class arbol {
         System.out.println(p.elem + " ");
         inOrden(p.der);
     }
+    
     ////////////////////////////////////////////////////
     public Nodo eliminarNodo(Nodo p){
         if(p.izq == null && p.der == null){
@@ -90,6 +92,7 @@ public class arbol {
         }
         return p;
     }
+    
     /////////////////////////////////////////////////////
     //1
     public void eliminarPares(){

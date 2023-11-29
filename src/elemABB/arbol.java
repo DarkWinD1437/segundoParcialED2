@@ -32,6 +32,21 @@ public class arbol {
          }
          return p;
      }
+     
+     ///////////////////////////////////////////////////
+     public void inOrden(){
+         inOrden(raiz);
+     }
+     
+     private void inOrden(Nodo p){
+         if(p == null){
+             return;
+         }
+         inOrden (p.izq);
+         System.out.println(p.elem + " ");
+         inOrden(p.der);
+     }
+     
      /////////////////////////////////////////////////////
      
      //1
@@ -131,20 +146,6 @@ public class arbol {
              return p.elem;
          }
          return menor(p.izq);
-     }
-     
-     //*
-     public void inOrden(){
-         inOrden(raiz);
-     }
-     
-     private void inOrden(Nodo p){
-         if(p == null){
-             return;
-         }
-         inOrden (p.izq);
-         System.out.println(p.elem + " ");
-         inOrden(p.der);
      }
     
 }

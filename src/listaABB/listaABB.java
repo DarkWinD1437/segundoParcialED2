@@ -19,16 +19,19 @@ public class listaABB {
             listaABB[i]=new arbol();
         }
     }
+    
     ///////////////////////////////////////////////////
     public void insertar(String str){
         listaABB[str.length()].insertar(str);
     }
+    
     ///////////////////////////////////////////////////
     public void inOrden(){
         for(int i=0;i<max;i++){
             listaABB[i].inOrden();
         }
     }
+    
     ///////////////////////////////////////////////////
     //1
     public void palabrasAscAsc() {
