@@ -22,13 +22,17 @@ public class elimElem {
         l1.insertar(20);
         l1.insertar(40);
         l1.insertar(60);
-        l1.insertar(80);
-        
+        l1.insertar(20);
+
         System.out.println("Arbol antes de eliminar: ");
         l1.inOrden();
         System.out.println("\n Arbol despues de eliminar");
-        l1.eliminar(30);
+        l1.eliminarPares();
+        //l1.eliminarNiveles(1);
+        //l1.eliminarRaices();
+        //l1.eliminarNodosUnHijo();
+        //l1.eliminarHojas();
         l1.inOrden();
     }
-    
+
 }

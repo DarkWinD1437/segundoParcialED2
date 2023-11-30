@@ -95,40 +95,48 @@ public class arbol {
     
     /////////////////////////////////////////////////////
     //1
+    
     public void eliminarPares(){
-        raiz = eliminarNiveles(raiz);
+        raiz = eliminarPares(raiz);
     }
     
-    private Nodo eliminarNiveles(Nodo p){
+    private Nodo eliminarPares(Nodo p){
         if(p == null){
             return null;
         }
-        p.izq = eliminarNiveles(p.izq);
-        p.der = eliminarNiveles(p.der);
+        p.izq = eliminarPares(p.izq);
+        p.der = eliminarPares(p.der);
         if(p.elem % 2 == 0){
-            p = eliminarNiveles(p);
+            if(p.izq != null){
+                return p.izq;
+            }
+            else{
+                return p.der;
+            }
         }
         return p;
     }
     
     //2
+    
     public void eliminarNiveles(int n){
-        raiz = eliminarNivel(raiz, n, 0);
+        raiz = eliminarNiveles(raiz, n, 0);
     }
     
-    private Nodo eliminarNivel(Nodo p, int nivel, int nivelActual){
+    private Nodo eliminarNiveles(Nodo p, int nivel, int nivelActual){
         if(p == null){
             return null;
         }
         if(nivel == nivelActual){
             return null;
         }
-        p.izq = eliminarNivel(p.izq, nivel, nivelActual+1);
-        p.der = eliminarNivel(p.der, nivel, nivelActual+1);
+        p.izq = eliminarNiveles(p.izq, nivel, nivelActual+1);
+        p.der = eliminarNiveles(p.der, nivel, nivelActual+1);
         return p;
     }
     
     //3
+    
     public void eliminarRaices(){
         raiz = eliminarRaices(raiz);
     }
@@ -137,13 +145,13 @@ public class arbol {
         if(p == null){
             return null;
         }
-        p = null;
-        eliminarRaices(p.izq);
-        eliminarRaices(p.der);
-        return p;
+        p.izq = eliminarRaices(p.izq);
+        p.der = eliminarRaices(p.der);
+        return null;
     }
     
     //4
+    
     public void eliminarNodosUnHijo(){
         raiz = eliminarNodosUnHijo(raiz);
     }
@@ -158,38 +166,24 @@ public class arbol {
         if(p.der == null){
             return p.izq;
         }
+        p.izq = eliminarNodosUnHijo(p.izq);
+        p.der = eliminarNodosUnHijo(p.der);
         return p;
     }
     
     //5
-    public void eliminarNodosDuplicados(){
-        raiz = eliminarNodosDuplicados(raiz);
+    
+    public void eliminarHojas(){
+        eliminarHojas(raiz);
     }
     
-    private Nodo eliminarNodosDuplicados(Nodo p){
-        if(p == null){
-            return null;
-        }
-        p.izq = eliminarNodosDuplicados(p.izq);
-        p.der = eliminarNodosDuplicados(p.der);
-        if(buscar(raiz, p.elem) > 1){
-            p = eliminar(p, p.elem);
-        }
-        return p;
-    }
-    
-    private int buscar(Nodo p, int x){
-        if(p == null){
-            return 0;
-        }
-        if(x == p.elem){
-            return 1 + buscar(p.izq, x) + buscar(p.der, x);
-        }
-        else if(x < p.elem){
-            return buscar(p.izq, x);
-        }
-        else{
-            return buscar(p.der, x);
+    private void eliminarHojas(Nodo p){
+        if(p != null){
+            if(p.izq == null && p.der == null){
+                eliminar(p.elem);
+            }
+            eliminarHojas(p.izq);
+            eliminarHojas(p.der);
         }
     }
     
@@ -208,6 +202,38 @@ public class arbol {
         p.izq = eliminarEnNivel(p.izq, nivel-1);
         p.der = eliminarEnNivel(p.der, nivel-1);
         return p;
+    }
+    
+    //7
+    public void eliminarNodosDuplicados(){
+        raiz = eliminarNodosDuplicados(raiz);
+    }
+    
+    private Nodo eliminarNodosDuplicados(Nodo p){
+        if(p == null){
+            return null;
+        }
+        p.izq = eliminarNodosDuplicados(p.izq);
+        p.der = eliminarNodosDuplicados(p.der);
+        while(buscar(raiz, p.elem) > 1){
+            raiz = eliminar(raiz, p.elem);
+        }
+        return p;
+    }
+    
+    private int buscar(Nodo p, int x){
+        if(p == null){
+            return 0;
+        }
+        int contador = 0;
+        if (p.elem == x) {
+            contador++;
+        }
+
+        contador += buscar(p.izq, x);
+        contador += buscar(p.der, x);
+
+        return contador;
     }
     
 }
